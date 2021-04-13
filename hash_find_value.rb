@@ -14,8 +14,10 @@ sample_hash.keys.each do |hashcheck|
   if sample_hash[hashcheck] == user_integer.to_i
     found = "#{user_integer} is under the key: #{hashcheck}"
     p found
-  else
-      not_found = "Could not find the integer #{user_integer}"
-    p not_found
   end
+end
+
+else
+  not_found = "Could not find the integer #{user_integer}"
+  p not_found
 end
