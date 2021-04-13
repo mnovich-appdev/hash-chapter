@@ -7,3 +7,15 @@
 sample_hash = {:a => 100, :b => 200, :c => 300, :d => 400, :e => rand(200), :f => 600, :g => 0 }
 
 p "Enter an integer to find:"
+
+user_integer=gets.chomp
+
+sample_hash.keys.each do |hashcheck|
+  if sample_hash[hashcheck] == user_integer.to_i
+    found = "#{user_integer} is under the key: #{hashcheck}"
+    p found
+  else
+      not_found = "Could not find the integer #{user_integer}"
+    p not_found
+  end
+end
